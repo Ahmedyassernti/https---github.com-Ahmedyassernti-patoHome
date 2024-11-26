@@ -1,0 +1,1316 @@
+/*--------------------- start global rules------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+:root {
+    --hooverColor : #d11f25;
+    --mainFont: "Montserrat";
+}
+/* --------------------- end global rules---------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+a {
+font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0px;
+    transition: all 0.4s;
+
+}
+
+a:hover {
+    color: var(--hooverColor);
+}
+
+@media (max-width: 576px) {
+    .navContainer {
+        width: 650px;
+    }
+}
+@media (max-width: 768px) {
+    .navContainer {
+        width: 750px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navContainer {
+        width: 850px;
+        margin: auto;
+        padding: auto;
+    }
+    .navMenue {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navContainer {
+        width: 1050px;
+    }
+}
+
+
+/*------------------------ start header------------------- */
+
+header {
+    height: 0px;
+}
+
+.head {
+    border-top: 5px solid #ec1d25;;
+    position: relative;
+    z-index: 50000;
+    background-color: transparent;
+    /* height: 945px; */ 
+}
+
+
+
+header .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 120px;
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header nav ul a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 15px;
+    transition: 0.3s;
+    font-family: var(--mainFont);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+header nav ul a:hover {
+    color: var(--hooverColor);
+}
+
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    align-items: center;
+    padding-right: 20px;
+
+
+}
+
+.social a , button {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navContainer .social a:hover {
+    color: var(--hooverColor);
+
+}
+.navContainer .social button:hover {
+    border-top: 2px solid #ec1d25;
+    border-bottom: 2px solid #ec1d25;
+
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+
+.btn-show-sidebar {
+    width: 26px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+
+/*--------------------------------- end header --------------------*/
+
+/*------------------------------- start Caroisal ----------------*/
+
+.carouselSec {
+    height: 100vh;
+    /* width: 100% !important; */
+}
+
+.firstCarousel {
+    /* position: absolute; */
+    /* top: 0; */
+    width: 100%;
+}
+
+.firstCarousel .carousel-inner img {
+
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+/* .carousel-caption {
+    bottom: 20rem !important;
+} */
+
+.firstCarousel .carousel-caption {
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+
+
+}
+
+.firstCarousel .carousel-caption span {
+    font-family: Courgette;
+    font-size: 60px;
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+
+    @media (max-width:450px) {
+        font-size: 35px;
+    }
+}
+
+.firstCarousel .carousel-caption h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    margin-bottom: 37px;
+    text-align: center;
+
+    @media (max-width:450px) {
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
+.firstCarousel .carousel-caption a {
+    background: white;
+    border-radius: 10px;
+    width: fit-content;
+    height: 40px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 20px auto;
+    padding: 15px 30px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #ec1d25 !important;
+    transition: all .6s;
+}
+
+.firstCarousel .carousel-caption a:hover {
+    color: white !important;
+    background-color: #EE2E30;
+
+} 
+
+
+/* .carousel .carousel-inner span {
+    font-family: Courgette;
+    font-size: 60px;
+    line-height: 1.1;
+    color: white;
+    position: relative;
+    top: -320px;
+    
+}
+.carousel .carousel-inner h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    position: relative;
+    top: -300px;
+
+}
+
+.carousel .carousel-inner a {
+    background: white;
+    border-radius: 10px;
+    width: fit-content;
+    height: 40px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 20px auto;
+    padding: 15px 30px;
+    position: relative;
+    display: block;
+    top: -260px;
+    left: 0px;
+    text-decoration: none;
+    color: #ec1d25 !important;
+    transition: all .6s;
+}
+
+.carousel .carousel-inner a:hover {
+    color: white !important;
+    background-color: #EE2E30;
+
+} */
+
+/*----------------------------- end Caroisal ---------------------*/
+/* ------------------------- start welcome section----------------- */
+
+#welcome {
+    background-image: url(../img/icons/pattern1.png);
+    background-repeat: repeat;
+    padding-bottom: 105px;
+    padding-top: 120px;
+}
+.welcomContainer {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.welcomeParagraph {
+    padding-bottom: 30px;
+    padding-top: 45px;
+
+}
+
+.welcomeText {
+    text-align: center;
+}
+
+.welcomeText span {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+    text-align: center;
+}
+
+.welcomeText h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.welcomeText p {
+    max-width: 513px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.welcomeText a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.welcomeText a:hover{
+    color: var(--hooverColor);
+}
+
+.welcomeText i {
+    margin-left: 10px;
+}
+
+
+
+
+.welcomeImg {
+    padding-bottom: 30px;
+}
+
+.imgOur {
+    border-radius: 10px;
+    max-width: 390px;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgOur img {
+    width: 100%;
+    transition: all 0.6s;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.imgOur img:hover {
+    scale: 1.1;
+}
+
+
+/* ------------------------- end welcome section----------------- */
+/* ------------------------- start discover section----------------- */
+
+.discoverText {
+    background-image: url(../img/bg-intro-01.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 135px;
+    padding-bottom: 158px;
+}
+
+.discoverText span {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+
+}
+
+.discoverText h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 3px;
+    margin: 0px;
+    text-align: center;
+}
+
+.dicoverImg {
+    padding-bottom: 133px;
+    padding-top: 77px;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container .row .discoverTextImg {
+    padding-top: 30px;
+    
+}
+
+
+.container .row .discoverTextImg .blockImg {
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+}
+
+.container .row .discoverTextImg img {
+    width: 100%;
+    transition: all 0.6s;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.container .row .discoverTextImg img:hover {
+    scale: 1.1;
+}
+
+.blockText {
+    padding-top: 35px;
+
+}
+
+.blockText h4 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 0.4s;
+}
+
+.blockText h4:hover {
+    color: var(--hooverColor);
+}
+
+.blockText p {
+    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.blockText a {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.blockText a:hover {
+    color: var(--hooverColor);
+}
+
+.blockText i {
+    padding-left: 10px;
+}
+
+/* ------------------------------ end discover section----------------------------- */
+/* ------------------------------- start menu section---------------------------- */
+
+.menu {
+    background-image: url(../img/icons/pattern2.png);
+    background-repeat: repeat;
+    padding-bottom: 120px;
+    padding-top: 115px;
+}
+
+.menueTitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menueTitle span {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.menueTitle h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 3px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+
+
+
+#ourMenu {
+    margin: 30px auto;
+    display: grid;
+    gap: 20px;
+    aspect-ratio: 1.6;
+}
+.p01 {
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+.p02 {
+    grid-area: 1 / 2 / span 2 / span 1;    
+}
+.p03 {
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.p04 {
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+.p05 {
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+.p06 {
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+
+
+
+#ourMenu > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 100%;
+    background-position: center;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+#ourMenu > div:hover {
+    background-size: 110%;
+    transition: all 0.6s ease-in-out;
+}
+
+#ourMenu .bt {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 16px 24px;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+}
+
+
+#ourMenu .bt:hover {
+    color: white;
+    background-color: #EE2E30;
+    transition: all 0.6s ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    #ourMenu {
+        margin: 30px auto;
+        display: grid;
+        gap: 20px;
+        width: 95%;
+        aspect-ratio: 0.4;
+    }
+
+    .p01 {
+        grid-area: 1 / 1 / span 2 / span 1;
+    }
+    .p02 {
+        grid-area: 1 / 2 / span 2 / span 1;
+    }
+    .p03 {
+        grid-area: 3 / 1 / span 1 / span 2;
+    }
+    
+    .p04 {
+        grid-area: 4 / 1 / span 2 / span 2;
+    }
+    .p05 {
+        grid-area: 6 / 1 / span 2 / span 2;
+    }
+    .p06 {
+        grid-area: 8 / 1 / span 2 / span 2;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    #ourMenu {
+        margin: 30px auto;
+        display: grid;
+        gap: 20px;
+        width: 95%;
+        aspect-ratio: 0.3;
+    }
+
+    .p01 {
+        grid-area: 1 / 1 / span 3 / span 1;
+    }
+    .p02 {
+        grid-area: 4 / 1 / span 3 / span 1;
+    }
+    .p03 {
+        grid-area: 7 / 1 / span 1 / span 1;
+    }
+    
+    .p04 {
+        grid-area: 8 / 1 / span 2 / span 1;
+    }
+    .p05 {
+        grid-area: 10 / 1 / span 2 / span 1;
+    }
+    .p06 {
+        grid-area: 12 / 1 / span 2 / span 1;
+    }
+}
+
+
+
+
+/* ----------------------------------- end menu section---------------------------------- */
+/* ----------------------------------- start booking section---------------------------------- */
+
+.booking {
+    background-image: url(../img/icons/pattern1.png);
+    background-repeat: repeat;
+    padding-bottom: 120px;
+    padding-top: 115px;
+}
+
+
+.bookingImg {
+    padding-bottom: 30px;
+}
+
+.imgbooking {
+    border-radius: 10px;
+    max-width: 390px;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgbooking img {
+    width: 100%;
+    transition: all 0.6s;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.imgbooking img:hover {
+    scale: 1.1;
+}
+
+.bookingText {
+    text-align: center;
+}
+
+.bookingText span {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.bookingText h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 2px;
+}
+
+.booking .inputCon span {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    color: #555555;
+}
+
+.booking .emailInput {
+    border-radius: 10px;
+    border: 2px solid #d9d9d9;
+    width: 270px;
+    height: 50px;
+    /* margin: 10px; */
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    background-color: white;
+    background-color: white;
+    position: relative;
+    margin-bottom: 23px;
+    margin-top: 3px;
+
+}
+
+.emailInput input {
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    outline: none;
+    border: none !important;
+}
+
+.emailInput i {
+    position: absolute;
+    right: 0px;
+    top: 37%;
+    margin-right: 18px;
+}
+
+.formBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking button {
+    background: #111111;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+    outline: none !important;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+}
+
+.booking button:hover {
+    background-color: var(--hooverColor);
+}
+
+/* ----------------------------------- end booking section---------------------------------- */
+/* ----------------------------------- start review section--------------------------------- */
+
+/* 
+.review {
+    padding-top: 115px;
+}
+
+.reviewTitle {
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.reviewTitle span {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.reviewTitle h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 3px;
+    margin: 0px;
+    text-align: center;
+}
+
+ */
+
+/* ----------------------------------- end review section---------------------------------- */
+/* ----------------------------------- start video section---------------------------------- */
+
+.video {
+    background-image: url(../img/bg-cover-video-02.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contentVideo {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-bottom: 250px;
+    padding-top: 225px;
+
+}
+
+.contentVideo span {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.contentVideo h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 3px;
+    margin: 0px;
+    text-align: center;
+}
+
+.playButtonCon {
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
+    margin-top: 43px;
+}
+
+.playButton {
+    color: #222222;
+    border-radius: 50%;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.playButton:hover {
+    background-color: rgba(236, 29, 37, 0.5);;
+    scale: 1.2;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+/* ----------------------------------- end video section---------------------------------- */
+/* ----------------------------------- start news section---------------------------------- */
+
+.news {
+    padding-top: 115px;
+
+}
+
+.news .container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.newsImg {
+    padding-top: 0px !important;
+}
+
+.newsTitle {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.newsTitle span {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.newsTitle h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 3px;
+    margin: 0px;
+    text-align: center;
+}
+
+.newsImg {
+    position: relative;
+}
+
+.time-blog {
+    position: absolute;
+    left: 14px;
+    bottom: 11px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3px 15px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+}
+
+/* ----------------------------------- end news section---------------------------------- */
+/* ----------------------------------- start signup section---------------------------------- */
+
+.signUpSection {
+    background-image: url(../img/icons/pattern1.png);
+    background-repeat: repeat;
+    padding-bottom: 85px;
+    padding-bottom: 85px;
+
+}
+
+.signUpForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.signUpForm span {
+    margin: 10px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.signUpForm .emailInput {
+    border-radius: 10px;
+    border: 2px solid #d9d9d9;
+    width: 270px;
+    height: 50px;
+    margin: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    background-color: white;
+    background-color: white;
+    position: relative;
+}
+
+.emailInput input {
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    outline: none;
+    border: none !important;
+}
+
+.emailInput i {
+    position: absolute;
+    right: 0px;
+    top: 37%;
+    margin-right: 18px;
+}
+
+.signUpForm button {
+    background: #111111;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+    outline: none !important;
+    border: none;
+    margin: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+}
+
+.signUpForm button:hover {
+    background-color: var(--hooverColor);
+}
+
+/* ----------------------------------- end signup section---------------------------------- */
+/* ----------------------------------- start footer section---------------------------------- */
+
+#footer {
+    background-color:#222222;
+    color: #999999;
+}
+
+#footer p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.7;
+}
+
+#footer span {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555555;
+}
+
+#footer h4 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+
+}
+
+.footerContainer {
+    max-width: 1200px;
+    padding-bottom: 70px;
+    padding-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.paragrapgCont {
+    margin-bottom: 70px;
+}
+
+.contactP {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.contactP i {
+    width: 20px;
+    font-size: 16px;
+}
+
+
+#allContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#allContacts p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.7;
+}
+
+.twit {
+    padding-top: 50px;
+}
+
+
+.gall {
+    padding-top: 50px;
+}
+
+
+
+.gallery > .row > .col {
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+#footer a {
+    text-decoration: none;
+    color: rgb(236, 29, 37);
+}
+
+#footer .gallery .col {
+    padding: 0 !important;
+}
+#footer .gallery .col div {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 29, 37);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#footer .gallery .col div:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.endfooter {
+    background-color: #111111;
+}
+
+.endfooter .container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 22px;
+    padding-top: 22px;
+}
+
+
+.endfooter .footerSocial {
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+
+}
+
+.endfooter .footerSocial a {
+    color: white !important;
+    font-size: 15px !important;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0px;
+    transition: all 0.4s;
+    padding-right: 20px;
+}
+
+.endfooter .footerSocial a:hover {
+    color: var(--hooverColor) !important;
+}
+
+.copyright {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #999999;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/* ----------------------------------- end footer section---------------------------------- */
